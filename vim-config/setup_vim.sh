@@ -6,7 +6,7 @@ echo "Setting up Vim configuration..."
 echo "Copying .vimrc to home directory..."
 cp .vimrc ~/.vimrc
 
-# Install Vundle if not present
+# Install Vundle if ~/.vim/bundle/Vundle.vim is not present
 if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]; then
     echo "Installing Vundle..."
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
