@@ -15,7 +15,7 @@ else
 fi
 
 # Installing Vundle Plugins
-echo "Installing Vim plugins..."
+echo "Installing Vundle plugins..."
 vim +PluginInstall +qall
 
 echo "Vim setup completed."
