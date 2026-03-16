@@ -27,7 +27,7 @@ reload bash:
 
  ## Citations  
 
- - [Awesome bash aliases](https://github.com/ctrlaltvikas/awesome-bash-alias) - used to pick my alias.
+ - [Awesome bash aliases](https://github.com/ctrlaltvikas/awesome-bash-alias) - used to pick my alias from the `clear` section.
  - [30 okay aliases](https://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html) - used to pick my 2nd alias.
 
 
