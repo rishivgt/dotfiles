@@ -2,8 +2,9 @@
 This directory contains the script for installing system software(AWS-cli) on an Ubuntu-based system.
 
 --- 
-## Install_aws_cli.sh
+## Install_aws_cli.sh  
 This script installs aws cli v2 manually by using the official binaries. The apt install command is used to install dependencies like curl and unzip. 
+
 ---
 ## Features
 - Ensure that the script runs as a root(EUID check).
@@ -24,7 +25,15 @@ sudo ./install_aws_cli.sh
 ```
 
 # Citation
-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html - This is the official aws-cli installation guide for different operating systems.From this I chose to use the installation guide for Linux to make my script. I used curl to install the binary file. I extracted the files with the unzip command and using the final extracted folder, I installed the aws cli with the help of the /tmp/aws/install file. To verify the installation, I ran the command aws --version.
+```
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html - This is the official aws-cli installation guide
+for different operating systems.
+From this I chose to use the installation guide for Linux to make my script.
+I used curl to install the binary file.
+I extracted the files with the unzip command and using the final extracted folder, I installed the aws cli with
+the help of the /tmp/aws/install file.
+To verify the installation, I ran the command aws --version.
+```
 
 
 
