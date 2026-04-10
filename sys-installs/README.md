@@ -13,7 +13,7 @@ This script installs aws cli v2 manually by using the official binaries. The apt
 - Detects command line name conflicts(`aws`).
 - Install dependencies(`curl` and `unzip`).
 
-- Downloads AWS cli from official source: [aws cli url](https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip)
+- Downloads AWS cli from official source: [aws cli](https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip)
 - Installs silently
 - Cleans temporary files after install
 - Verifies installation
@@ -25,15 +25,15 @@ sudo ./install_aws_cli.sh
 ```
 
 # Citation
-```
-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html - This is the official aws-cli installation guide
+
+[Installing or updating to the latest version of AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) - This is the official aws-cli installation guide
 for different operating systems.
 From this I chose to use the installation guide for Linux to make my script.
 I used curl to install the binary file.
 I extracted the files with the unzip command and using the final extracted folder, I installed the aws cli with
 the help of the /tmp/aws/install file.
 To verify the installation, I ran the command aws --version.
-```
+
 
 
 
