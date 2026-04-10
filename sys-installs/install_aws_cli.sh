@@ -2,7 +2,7 @@
 set -e
 
 
-if [ "$EUID" !=0 ]; then
+if [ "$EUID" -ne 0 ]; then
     echo "error: This script must be run as root or sudo."
     exit 1
 fi
