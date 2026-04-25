@@ -6,8 +6,9 @@ echo "Setting up Vim configuration..."
 echo "Copying .vimrc to home directory..."
 cp .vimrc ~/.vimrc
 
+# Choices for user to continue or to abort installation
 read -p "Continue with installation (y/n): " user_choice
-if [["$user_choice" !="y" ]]; then
+if [[ "$user_choice" != "y" ]]; then
     echo "Installation aborted by user"
     exit 0
 fi
