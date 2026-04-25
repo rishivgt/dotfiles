@@ -6,6 +6,12 @@ echo "Setting up Vim configuration..."
 echo "Copying .vimrc to home directory..."
 cp .vimrc ~/.vimrc
 
+read -p "Continue with installation (y/n): " user_choice
+if [["$user_choice" !="y" ]]; then
+    echo "Installation aborted by user"
+    exit 0
+fi
+
 # Install Vundle if ~/.vim/bundle/Vundle.vim is not present
 if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]; then
     echo "Installing Vundle..."
