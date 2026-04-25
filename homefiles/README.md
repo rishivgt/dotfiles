@@ -3,27 +3,28 @@ This folder contains the custom bash aliases in the environment to enhance produ
 ## Files
 
 
-.bash_aliases: This contains the useful bash aliases for quick command execution.
+`.bash_aliases`: This contains the useful bash aliases for quick command execution.
 
 Examples included:
 - clear command
 - git command
 - list command
 
-install_bash_aliases.sh: This script installs the bash aliases by creating the symbolic links from the repository to the user's home directory.
+`install_bash_aliases.sh`: This script installs the bash aliases by creating the symbolic links from the repository to the user's home directory.
 
 Steps Performed by script:
-1. backup existing .bash_aliases file
+1. backup existing `.bash_aliases` file
 2. create a symbolic link from the repository
-3. ensure that .bashrc loads .bash_aliases
-4. Prompt the user to reload the bash enviromment
+3. ensure that `.bashrc` loads `.bash_aliases`
+4. Prompt the user to reload the bash environment
 
 ## Installation 
 
-run: ./install_bash_aliases.sh
+run:  
+`./install_bash_aliases.sh`
 
-reload bash:
- source ~/.bashrc
+reload bash:  
+ `source ~/.bashrc`
 
  ## Citations  
 
